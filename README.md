@@ -4,8 +4,8 @@ Code, trained models and write-up for our two selected submissions.
 
 | | Kaggle notebook | Public score | `request_id` or request-derived features | Reads other rows |
 |---|---|---|---|---|
-| **track_b** | `sharechat-track-b` v3 | 0.89382 | none | yes: same post, and same user at another time |
-| **track_a** | `sharechat-track-a` v3 | 0.83441 | none | no |
+| **track_b** | [`sharechat-track-b`](https://www.kaggle.com/code/cassinicraft/sharechat-track-b) v3 | 0.89382 | none | yes: same post, and same user at another time |
+| **track_a** | [`sharechat-track-a`](https://www.kaggle.com/code/cassinicraft/sharechat-track-a) v3 | 0.83441 | none | no |
 
 Neither track uses `request_id`, request size, or any grouping of rows by request, in training or in inference.
 track_b is **not** row-independent; track_a is. Section 1 of the write-up says exactly what that means.

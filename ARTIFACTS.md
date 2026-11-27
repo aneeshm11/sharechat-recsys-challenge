@@ -33,15 +33,29 @@ Submission = weighted logit average of the 11 boosters.
 
 ## The same files on Kaggle
 
+All of the following are public.
+
 | | Kaggle location |
 |---|---|
-| track_a notebook | https://www.kaggle.com/code/cassinicraft/sharechat-track-a (version 3) |
+| track_a notebook | https://www.kaggle.com/code/cassinicraft/sharechat-track-a (version 3, the submitted version) |
 | track_a models | https://www.kaggle.com/datasets/cassinicraft/sharechat-rowonly-b-models |
-| track_b notebook | https://www.kaggle.com/code/cassinicraft/sharechat-track-b (version 3) |
+| track_b notebook | https://www.kaggle.com/code/cassinicraft/sharechat-track-b (version 3, the submitted version) |
 | track_b models and code | https://www.kaggle.com/datasets/cassinicraft/sharechat-track-b-models |
 
-The Kaggle notebooks and datasets are private; we will share them with any Kaggle account you name. The files in this repository are
-byte-identical copies of the dataset files.
+The files in this repository are byte-identical copies of the dataset files.
+
+### Earlier notebooks: disclosed, not selected
+
+| Notebook | What it is | Models |
+|---|---|---|
+| https://www.kaggle.com/code/cassinicraft/sharechat-nb-requestsize-trace | **uses request size**; public 0.92029 | https://www.kaggle.com/datasets/cassinicraft/sharechat-nb-requestsize-trace-models |
+| https://www.kaggle.com/code/cassinicraft/sharechat-nb-darkgray-trace | cross-row without `request_id`; public 0.88967; superseded by track_b | https://www.kaggle.com/datasets/cassinicraft/sharechat-nb-darkgray-models |
+| https://www.kaggle.com/code/cassinicraft/sharechat-nb-compliant | row-independent; the same boosters as track_a | the track_a models |
+| https://www.kaggle.com/code/cassinicraft/sharechat-recsys-row-independent-inference-comp | earlier draft of the row-independent notebook | the track_a models |
+| https://www.kaggle.com/code/cassinicraft/sharechat-recsys-row-independent-inference-priv | earlier draft: row-independent at inference, boosters trained on soft targets from a teacher that used request size | https://www.kaggle.com/datasets/cassinicraft/sharechat-rowonly-c1-models |
+
+These five notebooks were saved again, with unchanged code, on 27 November 2026 when they were made public, so their latest version is
+dated after the deadline. The two selected notebooks were made public without a new version.
 
 ## Intermediate artefacts not included
 
