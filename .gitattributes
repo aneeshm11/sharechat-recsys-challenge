@@ -1,0 +1,3 @@
+# keep every file byte-identical to the copies used on Kaggle (no line-ending conversion)
+* -text
+*.ubj binary
