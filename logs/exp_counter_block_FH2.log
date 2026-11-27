@@ -1,0 +1,25 @@
+[11:05:51 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  224M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           4           3           0          23          26
+
+[11:05:56 +     5s] MODE B SMOKE 0 STAGES ['x2'] GPU True 2
+[11:05:56 +     5s] features: row 751 trace+future 325 W 156 V 191
+[11:05:56 +     5s] base features present: tr
+[11:05:56 +     5s] base features present: te
+[11:05:57 +     7s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[11:05:58 +     7s] copy 0 keeps 873950 train rows (0.568)
+[11:05:58 +     7s] copy 1 keeps 913999 train rows (0.594)
+[11:05:58 +     7s] copy 2 keeps 957310 train rows (0.623)
+[11:05:58 +     7s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[11:10:55 +   305s] extra block fh2 fh2_full.npy done
+[11:11:52 +   361s] extra block fh2 fh2_cb0.npy done
+[11:13:40 +   469s] extra block fh2 fh2_cb1.npy done
+[11:15:26 +   576s] extra block fh2 fh2_cb2.npy done
+[11:15:27 +   576s] started x2_wg_s1 on gpu 1
+[11:20:03 +  272s] [x2_wg_s1] train matrix 1010303 x 1760
+[11:32:01 +  990s] [x2_wg_s1] rounds 310 AUC {'valfull': 0.90429, 'valthin': 0.89667}
+[11:32:01 +  990s] [x2_wg_s1] top gain: tr_z_c2:87662, feature54:81108, plat_u6p3_bu6_bp3:51026, feature493:44542, plat_u4p6_bu4_bp6:43060, tr_z_c3:26560, feature419:15523, feature515:14271, dot_u4p6:13388, tr_c600_c2:12673, tr_zbest_u4p6:11521, feature418:11242, wa_zc_c2_lat_max:10218, wa_zc_u4p6_lat2_max:7238, wa_zc_c2_lat2_max:5966, feature431:4980, feature417:4142, fh600_feature247:4041, wa_mf_u4p6_lat_rss:3841, cos_u4p6:3727, feature53:3610, fh900_feature247:3427, cos_u6p3:3092, feature150:3091, tr_zbest_u6p3:3028
+[11:32:01 +  990s] [x2_wg_s1] DONE {"tag": "x2_wg_s1", "auc": {"valfull": 0.904294053029383, "valthin": 0.8966654400229964}, "n_train": 1010303, "rounds": 310, "train_time": 985.8, "time": 990.2}
+[11:32:06 +  1575s] started x2_wg_s2 on gpu 1

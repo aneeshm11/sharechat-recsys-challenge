@@ -1,0 +1,28 @@
+[15:43:35 +    0s] started e2_teacher_f0 gpu 0
+[15:43:35 +    0s] started e2_teacher_f1 gpu 1
+[15:44:47 +   72s]   done e2_teacher_f1 {'oof': 0.8863, 'rounds': 204}
+[15:45:02 +   87s]   done e2_teacher_f0 {'oof': 0.88324, 'rounds': 174}
+[15:45:03 +   88s] E2 request-size-aware teacher: out-of-fold AUC on fit rows 0.88473 (mean 0.0504 vs rate 0.0506)
+[15:45:46 +  131s] started e2_student_lam5 gpu 0
+[15:45:46 +  131s] started e2_student_lam10 gpu 1
+[15:46:55 +  200s]   done e2_student_lam5 {'val': 0.83987, 'rounds': 247}
+[15:46:55 +  200s] started e1_pseudo_row gpu 0
+[15:47:13 +  218s]   done e2_student_lam10 {'val': 0.83899, 'rounds': 391}
+[15:47:13 +  218s] started e1_pseudo_row_hard gpu 1
+[15:48:25 +  290s]   done e1_pseudo_row_hard {'val': 0.8256, 'rounds': 82}
+[15:49:04 +  329s]   done e1_pseudo_row {'val': 0.83972, 'rounds': 252}
+[15:58:22 +  887s] started e3_pseudo_trackb gpu 0
+[16:06:43 + 1388s]   FAILED e3_pseudo_trackb al/lib/python3.13/dist-packages/xgboost/lib/libxgboost.so(+0x119bbed) [0x7cbcf859bbed]
+  [bt] (7) /usr/local/lib/python3.13/dist-packages/xgboost/lib/libxgboost.so(+0x119e722) [0x7cbcf859e722]
+  [bt] (8) /usr/local/lib/python3.13/dist-packages/xgboost/lib/libxgboost.so(+0x640621) [0x7cbcf7a40621]
+
+
+
+[16:06:43 + 1388s] started e4_teacher_f0 gpu 0
+[16:06:43 + 1388s] started e4_teacher_f1 gpu 1
+[16:10:37 + 1622s]   done e4_teacher_f1 {'oof': 0.92852, 'rounds': 276}
+[16:11:01 + 1646s]   done e4_teacher_f0 {'oof': 0.9277, 'rounds': 345}
+[16:11:01 + 1646s] E4 teacher (cross-row + request size): out-of-fold AUC 0.92809
+[16:11:01 + 1646s] started e4_student_lam5 gpu 0
+[16:17:46 + 2052s]   done e4_student_lam5 {'valfull': 0.90584, 'valthin': 0.89838, 'rounds': 607}
+[16:17:46 + 2052s] DIAG2 DONE {"e2_teacher_f1": {"oof": 0.8863, "rounds": 204}, "e2_teacher_f0": {"oof": 0.88324, "rounds": 174}, "e2_teacher_oof_auc": 0.884726941495861, "e2_student_lam5": {"val": 0.83987, "rounds": 247}, "e2_student_lam10": {"val": 0.83899, "rounds": 391}, "e1_pseudo_row_hard": {"val": 0.8256, "rounds": 82}, "e1_pseudo_row": {"val": 0.83972, "rounds": 252}, "e4_teacher_f1": {"oof": 0.92852, "rounds": 276}, "e4_teacher_f0": {"oof": 0.9277, "rounds": 345}, "e4_teacher_oof_auc": 0.9280929427739137, "e4_student_lam5": {"valfull": 0.90584, "valthin": 0.89838, "rounds": 607}}

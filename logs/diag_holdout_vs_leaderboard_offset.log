@@ -1,0 +1,42 @@
+rows train 1537638 test 1037090 | fit 1010303 val 527335
+
+=== D1. actual hold-out AUC vs the AUC the model expects from its own probabilities
+track_a row-only (d5)          val: actual 0.84030 self-expected 0.83941 mean p 0.04966 (rate 0.04820) | test: self-expected 0.83725 mean p 0.04855
+                                 test hours 72-96: rows  367771 self-expected 0.83861 mean p 0.04630
+                                 test hours 96-120: rows  310089 self-expected 0.83587 mean p 0.05034
+                                 test hours 120-150: rows  359224 self-expected 0.83683 mean p 0.04930
+                                 val hours 48-54: rows   34407 actual 0.85263 self-expected 0.84543 rate 0.0475 mean p 0.0489
+                                 val hours 54-60: rows  133540 actual 0.83762 self-expected 0.83728 rate 0.0466 mean p 0.0473
+                                 val hours 60-66: rows  146870 actual 0.83850 self-expected 0.84110 rate 0.0529 mean p 0.0541
+                                 val hours 66-72: rows  212518 actual 0.84056 self-expected 0.83774 rate 0.0461 mean p 0.0482
+track_b trace (dense, lr.03)   val: actual 0.90504 self-expected 0.90482 mean p 0.04936 (rate 0.04820) | test: self-expected 0.89680 mean p 0.04842
+                                 test hours 72-96: rows  367771 self-expected 0.90002 mean p 0.04528
+                                 test hours 96-120: rows  310089 self-expected 0.89666 mean p 0.05098
+                                 test hours 120-150: rows  359224 self-expected 0.89340 mean p 0.04943
+                                 val hours 48-54: rows   34407 actual 0.92617 self-expected 0.91854 rate 0.0475 mean p 0.0468
+                                 val hours 54-60: rows  133540 actual 0.90745 self-expected 0.90501 rate 0.0466 mean p 0.0470
+                                 val hours 60-66: rows  146870 actual 0.90171 self-expected 0.90356 rate 0.0529 mean p 0.0544
+                                 val hours 66-72: rows  212518 actual 0.90178 self-expected 0.90286 rate 0.0461 mean p 0.0478
+
+=== D2. entities seen / not seen in the training window
+post    val rows on posts unseen in fit: 0.0897 | test rows on posts unseen in train: 0.1605 | by test day: 72-96h 0.079 96-120h 0.181 120-150h 0.226
+        track_a row-only (d5)          val AUC seen 0.84172 (rate 0.0471) | unseen 0.82399 (rate 0.0599) | self-expected on test: seen 0.83993 unseen 0.82221
+        track_b trace (dense, lr.03)   val AUC seen 0.90787 (rate 0.0471) | unseen 0.87519 (rate 0.0599) | self-expected on test: seen 0.90044 unseen 0.87722
+author  val rows on authors unseen in fit: 0.0407 | test rows on authors unseen in train: 0.0690 | by test day: 72-96h 0.036 96-120h 0.080 120-150h 0.093
+        track_a row-only (d5)          val AUC seen 0.84170 (rate 0.0476) | unseen 0.80623 (rate 0.0625) | self-expected on test: seen 0.84008 unseen 0.79632
+        track_b trace (dense, lr.03)   val AUC seen 0.90685 (rate 0.0476) | unseen 0.86112 (rate 0.0625) | self-expected on test: seen 0.89942 unseen 0.85978
+user    val rows on users unseen in fit: 0.9503 | test rows on users unseen in train: 0.9304 | by test day: 72-96h 0.932 96-120h 0.928 120-150h 0.931
+        track_a row-only (d5)          val AUC seen 0.83078 (rate 0.0451) | unseen 0.84074 (rate 0.0484) | self-expected on test: seen 0.82454 unseen 0.83809
+        track_b trace (dense, lr.03)   val AUC seen 0.90728 (rate 0.0451) | unseen 0.90491 (rate 0.0484) | self-expected on test: seen 0.89476 unseen 0.89692
+
+rows by number of training impressions of the post (val w.r.t. fit | test w.r.t. train), and val AUC per bucket
+     0-1      val share 0.0897 test share 0.1605 | track_a  val AUC 0.8240 | track_b  val AUC 0.8752
+     1-5      val share 0.0679 test share 0.0536 | track_a  val AUC 0.8205 | track_b  val AUC 0.9134
+     5-20     val share 0.1335 test share 0.1069 | track_a  val AUC 0.8257 | track_b  val AUC 0.9262
+    20-100    val share 0.2756 test share 0.2318 | track_a  val AUC 0.8306 | track_b  val AUC 0.9144
+   100-1000000000 val share 0.4333 test share 0.4472 | track_a  val AUC 0.8564 | track_b  val AUC 0.8961
+
+=== D3. reweighting the hold-out to the test mix of post exposure buckets (what AUC would the hold-out give with the test composition?)
+  track_a row-only (d5)          val AUC 0.84030 -> reweighted to test post-exposure mix 0.84107
+  track_b trace (dense, lr.03)   val AUC 0.90504 -> reweighted to test post-exposure mix 0.90159
+done 22s

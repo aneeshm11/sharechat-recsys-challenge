@@ -1,0 +1,41 @@
+{
+ "e2_teacher_f1": {
+  "oof": 0.8863,
+  "rounds": 204
+ },
+ "e2_teacher_f0": {
+  "oof": 0.88324,
+  "rounds": 174
+ },
+ "e2_teacher_oof_auc": 0.884726941495861,
+ "e2_student_lam5": {
+  "val": 0.83987,
+  "rounds": 247
+ },
+ "e2_student_lam10": {
+  "val": 0.83899,
+  "rounds": 391
+ },
+ "e1_pseudo_row_hard": {
+  "val": 0.8256,
+  "rounds": 82
+ },
+ "e1_pseudo_row": {
+  "val": 0.83972,
+  "rounds": 252
+ },
+ "e4_teacher_f1": {
+  "oof": 0.92852,
+  "rounds": 276
+ },
+ "e4_teacher_f0": {
+  "oof": 0.9277,
+  "rounds": 345
+ },
+ "e4_teacher_oof_auc": 0.9280929427739137,
+ "e4_student_lam5": {
+  "valfull": 0.90584,
+  "valthin": 0.89838,
+  "rounds": 607
+ }
+}

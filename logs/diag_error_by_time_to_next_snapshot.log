@@ -1,0 +1,28 @@
+rows 938616  rate 0.0480  AUC trace model 0.89754  row-only model 0.84066
+   next snapshot after   share    cum    rate  AUC trace   AUC row    lift
+                 0-30s   0.058  0.058  0.0470     0.8849    0.8626  0.0223
+                30-60s   0.044  0.103  0.0485     0.8864    0.8622  0.0241
+               60-120s   0.068  0.170  0.0479     0.8893    0.8576  0.0317
+              120-300s   0.125  0.296  0.0478     0.8905    0.8506  0.0399
+              300-600s   0.113  0.408  0.0472     0.8941    0.8447  0.0494
+             600-1200s   0.117  0.526  0.0458     0.9020    0.8409  0.0611
+            1200-1800s   0.065  0.591  0.0497     0.9078    0.8352  0.0726
+            1800-3600s   0.099  0.690  0.0483     0.9125    0.8308  0.0817
+            3600-7200s   0.077  0.768  0.0470     0.9183    0.8324  0.0859
+           7200-21600s   0.082  0.849  0.0480     0.9101    0.8325  0.0776
+               >21600s   0.129  0.978  0.0512     0.8873    0.8216  0.0658
+       never (in file)   0.022         0.0438     0.8234    0.8238 -0.0004
+
+share of all pair-ordering error carried by positives, by time to the next snapshot
+                 0-30s positives  0.057  error share  0.059  mean miss-rank 0.1065
+                30-60s positives  0.045  error share  0.048  mean miss-rank 0.1089
+               60-120s positives  0.067  error share  0.072  mean miss-rank 0.1091
+              120-300s positives  0.125  error share  0.132  mean miss-rank 0.1084
+              300-600s positives  0.111  error share  0.114  mean miss-rank 0.1056
+             600-1200s positives  0.112  error share  0.109  mean miss-rank 0.0999
+            1200-1800s positives  0.068  error share  0.063  mean miss-rank 0.0959
+            1800-3600s positives  0.100  error share  0.090  mean miss-rank 0.0919
+            3600-7200s positives  0.076  error share  0.067  mean miss-rank 0.0906
+           7200-21600s positives  0.082  error share  0.075  mean miss-rank 0.0941
+               >21600s positives  0.138  error share  0.142  mean miss-rank 0.1053
+                 never positives  0.020  error share  0.029  mean miss-rank 0.1493

@@ -1,0 +1,26 @@
+[11:41:18 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  274M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31          14           0           3          20          16
+
+[11:41:33 +    15s] MODE B SMOKE 0 STAGES ['xc'] GPU True 2
+[11:41:33 +    16s] features: row 751 trace+future 325 W 156 V 191
+[11:41:34 +    16s] base features present: tr
+[11:41:34 +    16s] base features present: te
+[11:41:37 +    19s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[11:41:37 +    19s] copy 0 keeps 873950 train rows (0.568)
+[11:41:37 +    19s] copy 1 keeps 913999 train rows (0.594)
+[11:41:37 +    20s] copy 2 keeps 957310 train rows (0.623)
+[11:41:38 +    20s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[11:47:53 +   396s] extra block ah ah_full.npy done
+[11:48:57 +   460s] extra block ah ah_cb0.npy done
+[11:50:03 +   526s] extra block ah ah_cb1.npy done
+[11:51:17 +   600s] extra block ah ah_cb2.npy done
+[11:52:02 +   644s] ah coverage (author seen again >= 10 min later): train 0.9935 | test 0.9714 ; post-level fh600 for comparison: see fh block
+[11:52:02 +   644s] started xc_wfa_s1 on gpu 0
+[12:00:17 +  484s] [xc_wfa_s1] train matrix 1010303 x 1814
+[12:16:57 + 1484s] [xc_wfa_s1] rounds 345 AUC {'valfull': 0.90423, 'valthin': 0.89665}
+[12:16:57 + 1484s] [xc_wfa_s1] top gain: tr_z_c2:90816, feature54:81412, plat_u6p3_bu6_bp3:51826, feature493:44781, plat_u4p6_bu4_bp6:43523, tr_z_c3:25914, feature419:15250, feature515:13927, dot_u4p6:13832, tr_c600_c2:12583, tr_zbest_u4p6:12566, feature418:11349, wa_zc_c2_lat_max:7509, wa_zc_u4p6_lat2_max:7373, fh600_feature247:6027, wa_zc_c2_lat2_max:5994, feature431:5219, feature417:4581, feature53:3839, wa_mf_u4p6_lat_rss:3797, cos_u4p6:3640, fh1200_feature247:3485, fh300_feature247:3377, feature150:3209, wa_mf_u4p6_lat_max:3060
+[12:16:57 + 1484s] [xc_wfa_s1] DONE {"tag": "xc_wfa_s1", "auc": {"valfull": 0.904234845238787, "valthin": 0.8966495194054349}, "n_train": 1010303, "rounds": 345, "train_time": 1479.6, "time": 1484.4}
+[12:17:00 +  2142s] started xc_wfa_s2 on gpu 0

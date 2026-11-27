@@ -1,0 +1,25 @@
+[13:09:37 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  423M   20G   3% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           9           0           3          24          21
+
+[13:09:40 +     4s] MODE B SMOKE 0 STAGES ['xc'] GPU True 2
+[13:09:40 +     4s] features: row 751 trace+future 325 W 156 V 191
+[13:09:40 +     4s] base features present: tr
+[13:09:40 +     4s] base features present: te
+[13:09:43 +     6s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[13:09:43 +     6s] copy 0 keeps 873950 train rows (0.568)
+[13:09:43 +     6s] copy 1 keeps 913999 train rows (0.594)
+[13:09:43 +     7s] copy 2 keeps 957310 train rows (0.623)
+[13:09:43 +     7s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[13:09:46 +     9s] started xc_wfub_s1 on gpu 1
+[13:13:45 +  237s] [xc_wfub_s1] train matrix 1010303 x 1713
+[13:29:16 + 1169s] [xc_wfub_s1] rounds 374 AUC {'valfull': 0.90561, 'valthin': 0.89804}
+[13:29:16 + 1169s] [xc_wfub_s1] top gain: tr_z_c2:88724, feature54:81288, plat_u6p3_bu6_bp3:51853, feature493:44484, plat_u4p6_bu4_bp6:43593, tr_z_c3:26711, feature419:15076, feature515:13993, dot_u4p6:13266, tr_zbest_u4p6:12691, tr_c600_c2:12306, feature418:11255, wa_zc_c2_lat_max:10687, fh600_feature247:6490, feature431:4841, feature417:4744, wa_zc_u4p6_lat2_max:4436, wa_zc_c2_lat2_max:4252, wa_mf_u4p6_lat_rss:3851, cos_u4p6:3655, fh1200_feature247:3541, feature53:3477, plat_u6p3_sumb:3418, cos_u6p3:3183, feature346:3130
+[13:29:16 + 1169s] [xc_wfub_s1] DONE {"tag": "xc_wfub_s1", "auc": {"valfull": 0.9056082508641081, "valthin": 0.8980390674954885}, "n_train": 1010303, "rounds": 374, "train_time": 1164.4, "time": 1168.6}
+[13:29:19 +  1182s] ================ XC wfub (dense training, lr 0.1) ================
+[13:29:20 +  1183s]   xc_wfub_s1 thin 0.89804 | thin_prehole 0.87712 | thin_other 0.89881 | full 0.90561 | rounds 374
+[13:29:20 +  1184s]   xc_wfub 1-seed average: thin 0.89804 | full 0.90561
+[13:29:21 +  1184s]   dense val rows with a later session of the same user: 0.0665 | AUC there 0.93286 | AUC elsewhere 0.90354
+[13:29:21 +  1184s] ALL DONE

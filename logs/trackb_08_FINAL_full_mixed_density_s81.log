@@ -1,0 +1,24 @@
+[12:37:34 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  356M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           8           2           2          23          23
+
+[12:37:47 +    13s] MODE B SMOKE 0 STAGES ['go2'] GPU True 2
+[12:37:47 +    13s] features: row 751 trace+future 325 W 156 V 191
+[12:37:48 +    13s] base features present: tr
+[12:37:48 +    13s] base features present: te
+[12:37:49 +    15s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[12:37:49 +    15s] copy 0 keeps 873950 train rows (0.568)
+[12:37:49 +    15s] copy 1 keeps 913999 train rows (0.594)
+[12:37:49 +    15s] copy 2 keeps 957310 train rows (0.623)
+[12:37:49 +    15s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[12:37:52 +    18s] final rounds 2298
+[12:37:52 +    18s] started pf_wfum_lr030_s81 on gpu 0
+[12:57:27 + 1172s] [pf_wfum_lr030_s81] train matrix 4282897 x 1697
+[13:40:06 + 3732s] [pf_wfum_lr030_s81] rounds 2298 AUC {}
+[13:41:53 + 3839s] [pf_wfum_lr030_s81] predicted test 1037090 mean 0.04852
+[13:41:53 + 3839s] [pf_wfum_lr030_s81] top gain: plat_u4p6_bu4_bp6:1225512, feature54:913536, tr_z_c2:881285, plat_u6p3_bu6_bp3:799369, tr_z_c3:309872, feature515:203008, tr_c900_c2:165567, tr_zbest_u4p6:145686, feature493:128888, wc_n900_zc_c2:128516, feature419:108046, feature417:92666, feature513:89313, feature352:85793, feature514:84659, dot_u6p3:77623, fh600_feature247:74505, feature418:74398, wc_n1800_zc_c2:73796, tr_c600_c2:67696, fh1200_feature247:58582, cos_u6p3:55062, feature430:45650, feature53:45341, fh300_feature247:45056
+[13:41:53 + 3839s] [pf_wfum_lr030_s81] DONE {"tag": "pf_wfum_lr030_s81", "auc": {}, "n_train": 4282897, "rounds": 2298, "train_time": 3731.9, "time": 3838.8}
+[13:41:59 +  3864s] wrote submission_C_wfum_lr030 1037090 mean 0.04852 models 1 min pairwise corr 1.00000
+[13:41:59 +  3864s] ALL DONE

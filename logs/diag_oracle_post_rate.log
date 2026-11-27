@@ -1,0 +1,19 @@
+=== H1. hold-out AUC by hours since the end of the fit window, posts seen in fit vs new posts
+  track_a h48-51: rows  22588 | seen 0.8511 (share 0.973) | new 0.8097
+  track_a h51-54: rows  11819 | seen 0.8569 (share 0.983) | new 0.8781
+  track_a h54-60: rows 133540 | seen 0.8377 (share 0.979) | new 0.8379
+  track_a h60-66: rows 146870 | seen 0.8400 (share 0.897) | new 0.8223
+  track_a h66-72: rows 212518 | seen 0.8430 (share 0.866) | new 0.8224
+  track_b h48-51: rows  22588 | seen 0.9233 (share 0.973) | new 0.9036
+  track_b h51-54: rows  11819 | seen 0.9313 (share 0.983) | new 0.9770
+  track_b h54-60: rows 133540 | seen 0.9079 (share 0.979) | new 0.8907
+  track_b h60-66: rows 146870 | seen 0.9046 (share 0.897) | new 0.8754
+  track_b h66-72: rows 212518 | seen 0.9063 (share 0.866) | new 0.8715
+oracle features ['loo_rate_1h', 'loo_n_1h', 'loo_rate_3h', 'loo_n_3h', 'loo_rate_12h', 'loo_n_12h', 'past6h_rate', 'past6h_n'] coverage (3h window has other rows): 0.907
+=== H2 base        val AUC 0.83947 rounds 220 | by block: h48-54 0.8515 h54-60 0.8374 h60-66 0.8375 h66-72 0.8395
+=== H2 oracle_1h   val AUC 0.83958 rounds 219 | by block: h48-54 0.8513 h54-60 0.8373 h60-66 0.8380 h66-72 0.8394
+=== H2 oracle_3h   val AUC 0.83950 rounds 156 | by block: h48-54 0.8516 h54-60 0.8369 h60-66 0.8379 h66-72 0.8396
+=== H2 oracle_12h  val AUC 0.83919 rounds 172 | by block: h48-54 0.8511 h54-60 0.8362 h60-66 0.8381 h66-72 0.8392
+=== H2 oracle_all  val AUC 0.83930 rounds 199 | by block: h48-54 0.8516 h54-60 0.8362 h60-66 0.8383 h66-72 0.8392
+=== H2 past6h      val AUC 0.83955 rounds 246 | by block: h48-54 0.8515 h54-60 0.8371 h60-66 0.8381 h66-72 0.8395
+done 1632s

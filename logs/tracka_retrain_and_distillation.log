@@ -1,0 +1,98 @@
+[10:01:58 +     7s] MODE S SMOKE 0 GPU True 2
+[10:03:43 +   112s] train features done 1537638 rate 0.04979
+[10:03:43 +   112s] test features done 1037090
+[10:03:44 +   113s] started h_d5 on gpu 1
+[10:05:20 +   94s] [h_d5] rounds 538 AUC {'val': 0.8403}
+[10:05:20 +   94s] [h_d5] DONE {"tag": "h_d5", "auc": {"val": 0.840299540044841}, "n_train": 1010303, "rounds": 538, "train_time": 93.4, "time": 94.2}
+[10:05:23 +   212s] started h_d7 on gpu 1
+[10:06:37 +   70s] [h_d7] rounds 296 AUC {'val': 0.83988}
+[10:06:37 +   70s] [h_d7] DONE {"tag": "h_d7", "auc": {"val": 0.8398840981067069}, "n_train": 1010303, "rounds": 296, "train_time": 69.3, "time": 69.9}
+[10:06:41 +   290s] started teach_ho on gpu 1
+[10:08:21 +   98s] [teach_ho] rounds 299 AUC {'val': 0.89551}
+[10:08:21 +   98s] [teach_ho] DONE {"tag": "teach_ho", "auc": {"val": 0.8955086935064211}, "n_train": 1010303, "rounds": 299, "train_time": 97.5, "time": 98.1}
+[10:08:24 +   393s] hard d5 0.84030 | hard d7 0.83988 | blend 0.84057 | cross-row teacher 0.89551
+[10:08:24 +   393s] started tp0 on gpu 1
+[10:09:33 +   67s] [tp0] rounds 299 AUC {'oof': 0.9002}
+[10:09:33 +   67s] [tp0] DONE {"tag": "tp0", "auc": {"oof": 0.9002019923449457}, "n_train": 757943, "rounds": 299, "train_time": 67.0, "time": 67.3}
+[10:09:36 +   465s] started tr0 on gpu 1
+[10:10:28 +   51s] [tr0] rounds 538 AUC {'oof': 0.83853}
+[10:10:28 +   51s] [tr0] DONE {"tag": "tr0", "auc": {"oof": 0.8385331343802778}, "n_train": 757943, "rounds": 538, "train_time": 50.2, "time": 50.6}
+[10:10:30 +   519s] started tp1 on gpu 1
+[10:11:28 +   57s] [tp1] rounds 299 AUC {'oof': 0.89822}
+[10:11:28 +   57s] [tp1] DONE {"tag": "tp1", "auc": {"oof": 0.8982195346113089}, "n_train": 758103, "rounds": 299, "train_time": 56.4, "time": 56.7}
+[10:11:30 +   579s] started tr1 on gpu 1
+[10:12:23 +   51s] [tr1] rounds 538 AUC {'oof': 0.83602}
+[10:12:23 +   51s] [tr1] DONE {"tag": "tr1", "auc": {"oof": 0.8360238468183099}, "n_train": 758103, "rounds": 538, "train_time": 51.0, "time": 51.4}
+[10:12:24 +   633s] started tp2 on gpu 1
+[10:13:20 +   55s] [tp2] rounds 299 AUC {'oof': 0.89866}
+[10:13:20 +   55s] [tp2] DONE {"tag": "tp2", "auc": {"oof": 0.8986601432279215}, "n_train": 757204, "rounds": 299, "train_time": 54.6, "time": 54.8}
+[10:13:21 +   690s] started tr2 on gpu 1
+[10:14:14 +   51s] [tr2] rounds 538 AUC {'oof': 0.83515}
+[10:14:14 +   51s] [tr2] DONE {"tag": "tr2", "auc": {"oof": 0.835154382616323}, "n_train": 757204, "rounds": 538, "train_time": 50.9, "time": 51.3}
+[10:14:15 +   744s] started tp3 on gpu 1
+[10:15:10 +   53s] [tp3] rounds 299 AUC {'oof': 0.89745}
+[10:15:10 +   53s] [tp3] DONE {"tag": "tp3", "auc": {"oof": 0.8974470010019999}, "n_train": 757659, "rounds": 299, "train_time": 53.2, "time": 53.5}
+[10:15:12 +   801s] started tr3 on gpu 1
+[10:16:05 +   51s] [tr3] rounds 538 AUC {'oof': 0.83741}
+[10:16:05 +   51s] [tr3] DONE {"tag": "tr3", "auc": {"oof": 0.8374053409037338}, "n_train": 757659, "rounds": 538, "train_time": 50.7, "time": 51.0}
+[10:16:07 +   855s] teacher tp: out-of-fold AUC 0.89862 | mean 0.05038 (rate 0.05061) | Brier 0.03757 (labels vs rate: 0.04805)
+[10:16:07 +   856s] teacher tr: out-of-fold AUC 0.83675 | mean 0.05058 (rate 0.05061) | Brier 0.04302 (labels vs rate: 0.04805)
+[10:16:07 +   856s] started s_d5_p10 on gpu 1
+[10:18:32 +  144s] [s_d5_p10] rounds 1133 AUC {'val': 0.83987}
+[10:18:32 +  144s] [s_d5_p10] DONE {"tag": "s_d5_p10", "auc": {"val": 0.8398672322515935}, "n_train": 1010303, "rounds": 1133, "train_time": 142.6, "time": 144.1}
+[10:18:34 +  1003s] started s_d5_p05 on gpu 1
+[10:20:46 +  130s] [s_d5_p05] rounds 1006 AUC {'val': 0.84036}
+[10:20:46 +  130s] [s_d5_p05] DONE {"tag": "s_d5_p05", "auc": {"val": 0.8403624141433581}, "n_train": 1010303, "rounds": 1006, "train_time": 129.1, "time": 130.5}
+[10:20:49 +  1138s] started s_d7_p05 on gpu 1
+[10:22:54 +  123s] [s_d7_p05] rounds 726 AUC {'val': 0.84029}
+[10:22:54 +  123s] [s_d7_p05] DONE {"tag": "s_d7_p05", "auc": {"val": 0.8402898918599131}, "n_train": 1010303, "rounds": 726, "train_time": 122.1, "time": 123.3}
+[10:22:55 +  1264s] started s_d5_r05 on gpu 1
+[10:25:13 +  137s] [s_d5_r05] rounds 1054 AUC {'val': 0.84049}
+[10:25:13 +  137s] [s_d5_r05] DONE {"tag": "s_d5_r05", "auc": {"val": 0.8404918727767858}, "n_train": 1010303, "rounds": 1054, "train_time": 134.9, "time": 136.7}
+[10:25:16 +  1405s] started s_d7_p10 on gpu 1
+[10:27:32 +  134s] [s_d7_p10] rounds 800 AUC {'val': 0.83978}
+[10:27:32 +  134s] [s_d7_p10] DONE {"tag": "s_d7_p10", "auc": {"val": 0.8397755768266121}, "n_train": 1010303, "rounds": 800, "train_time": 132.4, "time": 133.8}
+[10:27:34 +  1543s] started s_d7_r05 on gpu 1
+[10:30:34 +  178s] [s_d7_r05] rounds 992 AUC {'val': 0.84035}
+[10:30:34 +  178s] [s_d7_r05] DONE {"tag": "s_d7_r05", "auc": {"val": 0.8403533402948091}, "n_train": 1010303, "rounds": 992, "train_time": 176.0, "time": 177.9}
+[10:30:37 +  1726s] ================ TRACK S hold-out AUC ================
+[10:30:38 +  1726s]   h_d5       0.84030  rounds 538
+[10:30:38 +  1727s]   h_d7       0.83988  rounds 296
+[10:30:38 +  1727s]   s_d5_p10   0.83987  rounds 1133
+[10:30:38 +  1727s]   s_d5_p05   0.84036  rounds 1006
+[10:30:39 +  1728s]   s_d7_p05   0.84029  rounds 726
+[10:30:39 +  1728s]   s_d5_r05   0.84049  rounds 1054
+[10:30:39 +  1728s]   s_d7_p10   0.83978  rounds 800
+[10:30:40 +  1729s]   s_d7_r05   0.84035  rounds 992
+[10:30:41 +  1730s]   blend hard d5+d7                         0.84057
+[10:30:41 +  1730s]   blend privileged 0.5 d5+d7               0.84067
+[10:30:41 +  1730s]   blend privileged 1.0 d5+d7               0.84006
+[10:30:41 +  1730s]   blend row-teacher 0.5 d5+d7              0.84073
+[10:30:41 +  1730s]   blend hard + privileged 0.5 (4 models)   0.84080
+[10:30:41 +  1730s] started p_d5_s31 on gpu 1
+[10:32:48 +  123s] [p_d5_s31] rounds 619 AUC {}
+[10:33:02 +  136s] [p_d5_s31] predicted test 1037090 mean 0.04855
+[10:33:02 +  136s] [p_d5_s31] DONE {"tag": "p_d5_s31", "auc": {}, "n_train": 1537638, "rounds": 619, "train_time": 122.8, "time": 136.2}
+[10:33:05 +  1874s] started p_d7_s31 on gpu 1
+[10:34:31 +   84s] [p_d7_s31] rounds 341 AUC {}
+[10:34:34 +   87s] [p_d7_s31] predicted test 1037090 mean 0.04858
+[10:34:34 +   87s] [p_d7_s31] DONE {"tag": "p_d7_s31", "auc": {}, "n_train": 1537638, "rounds": 341, "train_time": 84.3, "time": 87.0}
+[10:34:41 +  1970s] started p_d5_s32 on gpu 1
+[10:37:24 +  158s] [p_d5_s32] rounds 619 AUC {}
+[10:37:27 +  161s] [p_d5_s32] predicted test 1037090 mean 0.04860
+[10:37:27 +  161s] [p_d5_s32] DONE {"tag": "p_d5_s32", "auc": {}, "n_train": 1537638, "rounds": 619, "train_time": 158.3, "time": 161.3}
+[10:37:29 +  2138s] started p_d7_s32 on gpu 1
+[10:38:59 +   86s] [p_d7_s32] rounds 341 AUC {}
+[10:39:14 +  102s] [p_d7_s32] predicted test 1037090 mean 0.04853
+[10:39:14 +  102s] [p_d7_s32] DONE {"tag": "p_d7_s32", "auc": {}, "n_train": 1537638, "rounds": 341, "train_time": 86.4, "time": 102.0}
+[10:39:17 +  2246s] started p_d5_s33 on gpu 1
+[10:41:17 +  117s] [p_d5_s33] rounds 619 AUC {}
+[10:41:22 +  122s] [p_d5_s33] predicted test 1037090 mean 0.04851
+[10:41:22 +  122s] [p_d5_s33] DONE {"tag": "p_d5_s33", "auc": {}, "n_train": 1537638, "rounds": 619, "train_time": 116.7, "time": 121.7}
+[10:41:24 +  2372s] started p_d7_s33 on gpu 1
+[10:43:25 +  118s] [p_d7_s33] rounds 341 AUC {}
+[10:43:42 +  136s] [p_d7_s33] predicted test 1037090 mean 0.04877
+[10:43:42 +  136s] [p_d7_s33] DONE {"tag": "p_d7_s33", "auc": {}, "n_train": 1537638, "rounds": 341, "train_time": 118.5, "time": 135.8}
+[10:43:49 +  2518s] wrote submission_S_pure 1037090 models 6 mean 0.04845
+[10:43:49 +  2518s] distillation gain on the two-model blend: +0.00010
+[10:43:49 +  2518s] ALL DONE

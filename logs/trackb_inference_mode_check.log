@@ -1,0 +1,26 @@
+[12:48:44 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  368M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31          15           0           4          20          15
+
+[12:48:52 +     8s] MODE B SMOKE 0 STAGES ['predict'] GPU True 2
+[12:48:52 +     8s] features: row 751 trace+future 325 W 156 V 191
+[12:48:52 +     8s] base features present: tr
+[12:48:52 +     8s] base features present: te
+[12:48:55 +    11s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[12:48:55 +    11s] copy 0 keeps 873950 train rows (0.568)
+[12:48:55 +    11s] copy 1 keeps 913999 train rows (0.594)
+[12:48:55 +    11s] copy 2 keeps 957310 train rows (0.623)
+[12:48:55 +    11s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+/usr/local/lib/python3.13/dist-packages/xgboost/core.py:569: UserWarning: [12:49:11] WARNING: /__w/xgboost/xgboost/src/common/error_msg.cc:62: Falling back to prediction using DMatrix due to mismatched devices. This might lead to higher memory usage and slower performance. XGBoost is running on: cuda:0, while the input data is on: cpu.
+Potential solutions:
+- Use a data structure that matches the device ordinal in the booster.
+- Set the device for booster before call to inplace_predict.
+
+This warning will only be shown once.
+
+[12:51:28 +   164s] predicted pf_wd_lr030_s31.ubj w weight 1.0 mean 0.04842
+[12:53:47 +   303s] predicted pf_wfd_lr030_s51.ubj wf weight 1.0 mean 0.04847
+[12:53:53 +   309s] wrote submission.csv 1037090 mean 0.04829 models 2
+[12:53:53 +   309s] ALL DONE

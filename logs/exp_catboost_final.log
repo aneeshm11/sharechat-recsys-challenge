@@ -1,0 +1,21 @@
+[14:42:40 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  752M   19G   4% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           2           4           0          24          28
+
+[14:42:45 +     5s] MODE B SMOKE 0 STAGES ['cb'] GPU True 2
+[14:42:45 +     5s] features: row 751 trace+future 325 W 156 V 191
+[14:42:46 +     5s] base features present: tr
+[14:42:46 +     5s] base features present: te
+[14:42:47 +     6s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[14:42:47 +     6s] copy 0 keeps 873950 train rows (0.568)
+[14:42:47 +     6s] copy 1 keeps 913999 train rows (0.594)
+[14:42:47 +     6s] copy 2 keeps 957310 train rows (0.623)
+[14:42:47 +     6s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[14:42:48 +     7s] started cbf_wfu_s71 on gpu 0
+[14:44:07 +   76s] [cbf_wfu_s71] train matrix (1010000, 1697)
+[14:49:46 +  416s] [cbf_wfu_s71] rounds 1562 AUC {}
+[14:51:31 +  521s] [cbf_wfu_s71] predicted test 1037090 mean 0.04774
+[14:51:31 +  521s] [cbf_wfu_s71] DONE {"tag": "cbf_wfu_s71", "auc": {}, "n_train": 1010000, "rounds": 1562, "train_time": 415.7, "time": 520.7}
+[14:51:33 +   533s] ALL DONE

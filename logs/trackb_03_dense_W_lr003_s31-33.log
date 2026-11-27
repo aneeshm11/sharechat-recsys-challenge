@@ -1,0 +1,44 @@
+[10:05:28 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G   97M   20G   1% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           6           0           1          26          24
+
+[10:45:20 +  2392s] MODE B SMOKE 0 STAGES ['go2'] GPU True 2
+[10:45:20 +  2392s] features: row 751 trace+future 325 W 156 V 191
+[10:45:23 +  2396s] base features present: tr
+[10:45:23 +  2396s] base features present: te
+[10:45:25 +  2397s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[10:45:25 +  2397s] copy 0 keeps 873950 train rows (0.568)
+[10:45:25 +  2397s] copy 1 keeps 913999 train rows (0.594)
+[10:45:25 +  2397s] copy 2 keeps 957310 train rows (0.623)
+[10:45:25 +  2398s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[10:45:28 +  2400s] started ph_wd_lr030_s31 on gpu 1
+[10:48:05 +  154s] [ph_wd_lr030_s31] train matrix 1010303 x 1232
+[11:00:33 +  902s] [ph_wd_lr030_s31] rounds 1681 AUC {'valfull': 0.90504, 'valthin': 0.89754}
+[11:00:33 +  902s] [ph_wd_lr030_s31] top gain: plat_u4p6_bu4_bp6:341191, tr_z_c2:235613, feature54:196256, plat_u6p3_bu6_bp3:120075, tr_z_c3:95939, tr_c900_c2:46611, feature418:43114, feature515:43101, tr_zbest_u4p6:39524, feature419:31070, cos_u6p3:27867, dot_u6p3:25453, feature493:23923, feature514:22785, feature352:22383, wa_zc_c2_lat_max:22237, tr_z_u4p6:16396, tr_zbest_u6p3:13861, tr_amp_u4p6:13384, f1_feature247:12003, feature53:11763, feature358:11652, wa_mf_u4p6_lat2_max:10540, wa_zc_u4p6_lat2_max:10489, fn_feature247:9932
+[11:00:33 +  902s] [ph_wd_lr030_s31] DONE {"tag": "ph_wd_lr030_s31", "auc": {"valfull": 0.9050368829283583, "valthin": 0.8975416636653133}, "n_train": 1010303, "rounds": 1681, "train_time": 885.5, "time": 901.7}
+[11:00:34 +  3306s] ================ HOLD-OUT wd_lr030 ================
+[11:00:35 +  3307s]   ph_wd_lr030_s31 thin 0.89754 | thin_prehole 0.87770 | thin_other 0.89828 | full 0.90504 | rounds 1681
+[11:00:36 +  3308s]   seed-average: thin 0.89754 | full 0.90504
+[11:00:36 +  3308s] final rounds 1934
+[11:00:36 +  3308s] started pf_wd_lr030_s31 on gpu 1
+[11:01:44 +   64s] [pf_wd_lr030_s31] train matrix 1537638 x 1232
+[11:12:45 +  725s] [pf_wd_lr030_s31] rounds 1934 AUC {}
+[11:15:55 +  916s] [pf_wd_lr030_s31] predicted test 1037090 mean 0.04842
+[11:15:55 +  916s] [pf_wd_lr030_s31] top gain: plat_u4p6_bu4_bp6:510086, tr_z_c2:355540, feature54:299590, plat_u6p3_bu6_bp3:181805, tr_z_c3:137700, tr_c900_c2:81396, tr_zbest_u4p6:67317, feature418:66596, feature515:65434, feature419:41541, dot_u6p3:39852, cos_u6p3:39520, feature493:34683, feature514:31435, wa_zc_c2_lat_max:30931, feature352:30080, tr_z_u4p6:25564, tr_zbest_u6p3:21215, feature53:20220, wc_n900_zc_c2:18487, tr_amp_u4p6:18156, feature358:17159, f1_feature247:16915, feature484:16738, feature340:16044
+[11:15:55 +  916s] [pf_wd_lr030_s31] DONE {"tag": "pf_wd_lr030_s31", "auc": {}, "n_train": 1537638, "rounds": 1934, "train_time": 725.3, "time": 916.1}
+[11:16:00 +  4232s] started pf_wd_lr030_s32 on gpu 1
+[11:22:27 +  384s] [pf_wd_lr030_s32] train matrix 1537638 x 1232
+[11:33:51 + 1068s] [pf_wd_lr030_s32] rounds 1934 AUC {}
+[11:35:58 + 1195s] [pf_wd_lr030_s32] predicted test 1037090 mean 0.04824
+[11:35:58 + 1195s] [pf_wd_lr030_s32] top gain: plat_u4p6_bu4_bp6:566393, feature54:286803, tr_z_c2:215267, plat_u6p3_bu6_bp3:197653, tr_z_c3:159489, tr_c900_c2:112432, feature515:63647, tr_zbest_u4p6:61408, tr_c600_c2:51963, feature419:48879, feature352:44363, feature514:43215, feature513:38714, feature418:36067, feature493:33576, tr_c1200_c2:33156, tr_z_u4p6:32590, dot_u6p3:30338, wa_zc_c2_lat_max:29286, tr_amp_u4p6:24671, feature512:21882, tr_zbest_u6p3:21615, wa_zc_u4p6_lat2_max:20133, wc_n900_zc_c2:19971, feature358:19903
+[11:35:58 + 1195s] [pf_wd_lr030_s32] DONE {"tag": "pf_wd_lr030_s32", "auc": {}, "n_train": 1537638, "rounds": 1934, "train_time": 1068.5, "time": 1194.8}
+[11:36:01 +  5433s] started pf_wd_lr030_s33 on gpu 1
+[11:42:43 +  399s] [pf_wd_lr030_s33] train matrix 1537638 x 1232
+[11:52:34 +  991s] [pf_wd_lr030_s33] rounds 1934 AUC {}
+[11:56:52 + 1249s] [pf_wd_lr030_s33] predicted test 1037090 mean 0.04831
+[11:56:52 + 1249s] [pf_wd_lr030_s33] top gain: plat_u4p6_bu4_bp6:454119, tr_z_c2:339413, feature54:337772, plat_u6p3_bu6_bp3:196415, tr_z_c3:110999, feature418:76032, wc_n900_zc_c2:71816, tr_c900_c2:59766, tr_zbest_u4p6:58651, feature352:58480, feature515:50772, feature493:49149, cos_u6p3:42056, feature419:39165, wa_zc_c2_lat_max:36261, tr_z_u4p6:28585, dot_u6p3:28115, wc_n600_zc_c2:27986, feature512:27197, tr_c1200_c2:26726, tr_zbest_u6p3:20676, f1_feature247:20340, feature514:19852, wa_zc_u4p6_lat2_max:17081, feature513:16989
+[11:56:52 + 1249s] [pf_wd_lr030_s33] DONE {"tag": "pf_wd_lr030_s33", "auc": {}, "n_train": 1537638, "rounds": 1934, "train_time": 990.9, "time": 1248.9}
+[11:57:01 +  6693s] wrote submission_C_wd_lr030 1037090 mean 0.04817 models 3 min pairwise corr 0.99015
+[11:57:01 +  6693s] ALL DONE

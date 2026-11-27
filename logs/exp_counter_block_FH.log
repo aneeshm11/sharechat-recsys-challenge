@@ -1,0 +1,47 @@
+[10:33:05 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  132M   20G   1% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           5           2           0          24          25
+
+[10:33:10 +     5s] MODE B SMOKE 0 STAGES ['x1'] GPU True 2
+[10:33:10 +     6s] features: row 751 trace+future 325 W 156 V 191
+[10:33:11 +     6s] base features present: tr
+[10:33:11 +     6s] base features present: te
+[10:33:12 +     7s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[10:33:12 +     7s] copy 0 keeps 873950 train rows (0.568)
+[10:33:12 +     7s] copy 1 keeps 913999 train rows (0.594)
+[10:33:12 +     7s] copy 2 keeps 957310 train rows (0.623)
+[10:33:12 +     7s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[10:36:15 +   191s] fh full done
+[10:36:50 +   225s] fh copy 0 done
+[10:37:34 +   269s] fh copy 1 done
+[10:38:30 +   325s] fh copy 2 done
+[10:38:31 +   326s] started x_fh_s1 on gpu 1
+[10:41:16 +  162s] [x_fh_s1] train matrix 1010303 x 1592
+[10:47:09 +  516s] [x_fh_s1] rounds 307 AUC {'valfull': 0.90421, 'valthin': 0.89663}
+[10:47:09 +  516s] [x_fh_s1] top gain: tr_z_c2:90724, feature54:80945, plat_u6p3_bu6_bp3:51782, feature493:43523, plat_u4p6_bu4_bp6:43401, tr_z_c3:25311, feature419:15256, feature515:13865, dot_u4p6:13662, tr_zbest_u4p6:13159, tr_c600_c2:12175, feature418:11315, wa_zc_c2_lat_max:7905, wa_zc_u4p6_lat2_max:7613, fh600_feature247:5902, feature431:5836, wa_zc_c2_lat2_max:4847, feature417:4438, wa_mf_u4p6_lat_rss:3806, feature53:3514, cos_u4p6:3455, fh1200_feature247:3436, fh300_feature247:3222, cos_u6p3:3080, feature346:3026
+[10:47:09 +  516s] [x_fh_s1] DONE {"tag": "x_fh_s1", "auc": {"valfull": 0.9042121117468952, "valthin": 0.8966255962492556}, "n_train": 1010303, "rounds": 307, "train_time": 512.9, "time": 515.7}
+[10:47:13 +   848s] started x_base_s1 on gpu 1
+[10:48:53 +   97s] [x_base_s1] train matrix 1010303 x 1232
+[10:53:55 +  399s] [x_base_s1] rounds 375 AUC {'valfull': 0.90345, 'valthin': 0.89584}
+[10:53:55 +  399s] [x_base_s1] top gain: tr_z_c2:92953, feature54:81022, plat_u6p3_bu6_bp3:51665, feature493:44033, plat_u4p6_bu4_bp6:43460, tr_z_c3:22648, feature419:15171, feature515:14029, dot_u4p6:13408, tr_c600_c2:12565, tr_zbest_u4p6:11672, feature418:11338, wa_zc_c2_lat_max:11150, wa_zc_u4p6_lat2_max:7685, wa_zc_c2_lat2_max:6070, feature431:5723, feature417:4581, wa_mf_u4p6_lat_rss:3954, cos_u4p6:3749, cos_u6p3:3709, feature53:3624, feature150:3337, f1_feature247:3304, feature346:3190, wa_mf_u4p6_lat_max:3124
+[10:53:55 +  399s] [x_base_s1] DONE {"tag": "x_base_s1", "auc": {"valfull": 0.9034536378733677, "valthin": 0.8958435537825883}, "n_train": 1010303, "rounds": 375, "train_time": 395.3, "time": 399.1}
+[10:53:58 +  1253s] started x_fh_s2 on gpu 1
+[10:54:49 +   49s] [x_fh_s2] train matrix 1010303 x 1592
+[11:00:45 +  405s] [x_fh_s2] rounds 315 AUC {'valfull': 0.90415, 'valthin': 0.89657}
+[11:00:45 +  405s] [x_fh_s2] top gain: plat_u4p6_bu4_bp6:129824, plat_u6p3_bu6_bp3:53063, feature54:45680, feature514:40781, tr_z_c3:37362, wc_n900_zc_c2:32309, wc_n600_zc_c2:20587, tr_z_c2:10943, tr_z_u4p6:9946, tr_zbest_u4p6:9676, tr_amp_u4p6:9608, feature515:9086, feature417:7790, feature493:6364, tr_c450_c2:5969, fh600_feature247:5880, tr_c1200_c2:5563, tr_c900_c2:4932, tr_zbest_u6p3:4451, wa_zc_u4p6_lat2_max:4077, wa_zc_c2_lat_max:4073, feature410:3823, wa_mf_c2_lat_rss:3755, fh300_feature247:3534, fh600_feature252:3474
+[11:00:45 +  405s] [x_fh_s2] DONE {"tag": "x_fh_s2", "auc": {"valfull": 0.9041534014793515, "valthin": 0.8965704321742004}, "n_train": 1010303, "rounds": 315, "train_time": 402.5, "time": 404.5}
+[11:00:49 +  1664s] started x_base_s2 on gpu 1
+[11:01:29 +   38s] [x_base_s2] train matrix 1010303 x 1232
+[11:05:41 +  290s] [x_base_s2] rounds 342 AUC {'valfull': 0.90312, 'valthin': 0.89561}
+[11:05:41 +  290s] [x_base_s2] top gain: plat_u4p6_bu4_bp6:130864, plat_u6p3_bu6_bp3:53006, feature54:45240, feature514:40982, tr_z_c3:37586, wc_n900_zc_c2:31488, wc_n600_zc_c2:20728, tr_z_c2:11154, tr_zbest_u4p6:9916, tr_z_u4p6:9766, tr_amp_u4p6:9017, tr_c1200_c2:8658, feature515:8329, feature417:8041, tr_c450_c2:6214, feature493:5990, wa_zc_c2_lat_max:4942, wa_mf_c2_lat_rss:4643, tr_c900_c2:4352, wa_zc_u4p6_lat2_max:4272, tr_zbest_u6p3:4272, feature410:3624, feature418:3394, feature356:3250, wa_zc_u4p6_all_max:3118
+[11:05:41 +  290s] [x_base_s2] DONE {"tag": "x_base_s2", "auc": {"valfull": 0.9031224077177633, "valthin": 0.8956070819950379}, "n_train": 1010303, "rounds": 342, "train_time": 286.3, "time": 289.8}
+[11:05:43 +  1958s] ================ X1: fixed-horizon counter deltas (dense training, lr 0.1) ================
+[11:05:44 +  1959s]   x_base_s1  thin 0.89584 | thin_prehole 0.87541 | thin_other 0.89660 | full 0.90345 | rounds 375
+[11:05:44 +  1960s]   x_base_s2  thin 0.89561 | thin_prehole 0.87550 | thin_other 0.89636 | full 0.90312 | rounds 342
+[11:05:45 +  1960s]   x_fh_s1    thin 0.89663 | thin_prehole 0.87641 | thin_other 0.89737 | full 0.90421 | rounds 307
+[11:05:46 +  1961s]   x_fh_s2    thin 0.89657 | thin_prehole 0.87564 | thin_other 0.89734 | full 0.90415 | rounds 315
+[11:05:46 +  1961s]   x_base 2-seed average: thin 0.89695 | full 0.90448
+[11:05:47 +  1962s]   x_fh 2-seed average: thin 0.89779 | full 0.90533
+[11:05:47 +  1962s] ALL DONE

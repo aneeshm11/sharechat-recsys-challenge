@@ -1,0 +1,16 @@
+[13:43:12 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  529M   19G   3% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           5           4           1          23          25
+
+[13:43:15 +     3s] MODE B SMOKE 0 STAGES ['cb'] GPU True 2
+[13:43:15 +     3s] features: row 751 trace+future 325 W 156 V 191
+[13:43:15 +     3s] base features present: tr
+[13:43:15 +     3s] base features present: te
+[13:43:16 +     4s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[13:43:16 +     4s] copy 0 keeps 873950 train rows (0.568)
+[13:43:16 +     4s] copy 1 keeps 913999 train rows (0.594)
+[13:43:16 +     4s] copy 2 keeps 957310 train rows (0.623)
+[13:43:16 +     4s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[13:43:17 +     5s] started cbh_wfu_s71 on gpu 0

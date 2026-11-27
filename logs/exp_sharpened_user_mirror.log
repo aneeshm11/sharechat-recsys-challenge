@@ -1,0 +1,29 @@
+[14:44:51 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  752M   19G   4% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31          18           0           0          13          13
+
+[14:44:57 +     6s] MODE B SMOKE 0 STAGES ['xc'] GPU True 2
+[14:44:57 +     6s] features: row 751 trace+future 325 W 156 V 191
+[14:44:57 +     6s] base features present: tr
+[14:44:57 +     6s] base features present: te
+[14:44:59 +     8s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[14:45:00 +     8s] copy 0 keeps 873950 train rows (0.568)
+[14:45:00 +     9s] copy 1 keeps 913999 train rows (0.594)
+[14:45:00 +     9s] copy 2 keeps 957310 train rows (0.623)
+[14:45:00 +     9s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[14:45:46 +    55s] extra block um3 um3_full.npy done
+[14:46:07 +    76s] extra block um3 um3_cb0.npy done
+[14:46:16 +    85s] extra block um3 um3_cb1.npy done
+[14:46:21 +    90s] extra block um3 um3_cb2.npy done
+[14:46:21 +    90s] started xc_wfu3_s1 on gpu 1
+[14:48:47 +  141s] [xc_wfu3_s1] train matrix 1010303 x 1725
+[14:53:35 +  429s] [xc_wfu3_s1] rounds 335 AUC {'valfull': 0.90586, 'valthin': 0.8984}
+[14:53:35 +  429s] [xc_wfu3_s1] top gain: tr_z_c2:87017, feature54:81086, plat_u6p3_bu6_bp3:52159, plat_u4p6_bu4_bp6:43401, feature493:43307, tr_z_c3:26432, feature419:15589, feature515:14140, dot_u4p6:13407, tr_zbest_u4p6:13074, tr_c600_c2:12136, wa_zc_c2_lat_max:11497, feature418:10995, wa_zc_u4p6_lat2_max:7305, fh600_feature247:6519, feature417:4738, feature431:4331, wa_zc_c2_lat2_max:4188, cos_u4p6:3968, feature53:3887, wa_mf_u4p6_lat_rss:3737, fh1200_feature247:3362, feature150:3265, fh300_feature247:3140, cos_u6p3:3082
+[14:53:35 +  429s] [xc_wfu3_s1] DONE {"tag": "xc_wfu3_s1", "auc": {"valfull": 0.9058589543565307, "valthin": 0.8984041884829091}, "n_train": 1010303, "rounds": 335, "train_time": 427.2, "time": 429.1}
+[14:53:36 +   525s] ================ XC wfu3 (dense training, lr 0.1) ================
+[14:53:37 +   526s]   xc_wfu3_s1 thin 0.89840 | thin_prehole 0.87782 | thin_other 0.89917 | full 0.90586 | rounds 335
+[14:53:37 +   526s]   xc_wfu3 1-seed average: thin 0.89840 | full 0.90586
+[14:53:37 +   526s]   dense val rows with a later session of the same user: 0.0665 | AUC there 0.93296 | AUC elsewhere 0.90379
+[14:53:37 +   526s] ALL DONE

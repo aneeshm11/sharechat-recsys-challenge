@@ -1,0 +1,20 @@
+[11:25:41 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  251M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31          12           4           4          19          18
+
+[11:25:54 +    13s] MODE B SMOKE 0 STAGES ['x3'] GPU True 2
+[11:25:54 +    13s] features: row 751 trace+future 325 W 156 V 191
+[11:25:55 +    14s] base features present: tr
+[11:25:55 +    14s] base features present: te
+[11:25:56 +    16s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[11:25:57 +    16s] copy 0 keeps 873950 train rows (0.568)
+[11:25:57 +    16s] copy 1 keeps 913999 train rows (0.594)
+[11:25:57 +    16s] copy 2 keeps 957310 train rows (0.623)
+[11:25:57 +    16s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[11:26:00 +    19s] started x3_wf_d8 on gpu 0
+[11:32:26 +  383s] [x3_wf_d8] train matrix 1010303 x 1592
+[11:44:46 + 1123s] [x3_wf_d8] rounds 230 AUC {'valfull': 0.90386, 'valthin': 0.89629}
+[11:44:46 + 1123s] [x3_wf_d8] DONE {"tag": "x3_wf_d8", "auc": {"valfull": 0.9038597870841621, "valthin": 0.8962865658931535}, "n_train": 1010303, "rounds": 230, "train_time": 1114.3, "time": 1122.7}
+[11:44:49 +  1148s] started x3_wf_mcw200l20 on gpu 0

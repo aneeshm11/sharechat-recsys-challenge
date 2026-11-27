@@ -1,0 +1,24 @@
+[13:55:19 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  535M   19G   3% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           5           6           1          20          25
+
+[13:55:23 +     4s] MODE B SMOKE 0 STAGES ['go2'] GPU True 2
+[13:55:23 +     4s] features: row 751 trace+future 325 W 156 V 191
+[13:55:23 +     4s] base features present: tr
+[13:55:23 +     4s] base features present: te
+[13:55:24 +     5s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[13:55:24 +     5s] copy 0 keeps 873950 train rows (0.568)
+[13:55:24 +     5s] copy 1 keeps 913999 train rows (0.594)
+[13:55:24 +     5s] copy 2 keeps 957310 train rows (0.623)
+[13:55:24 +     5s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[13:55:25 +     6s] final rounds 2298
+[13:55:25 +     6s] started pf_wfut_lr030_s91 on gpu 0
+[14:04:29 +  541s] [pf_wfut_lr030_s91] train matrix 2745259 x 1697
+[14:31:57 + 2190s] [pf_wfut_lr030_s91] rounds 2298 AUC {}
+[14:33:19 + 2272s] [pf_wfut_lr030_s91] predicted test 1037090 mean 0.04860
+[14:33:19 + 2272s] [pf_wfut_lr030_s91] top gain: plat_u4p6_bu4_bp6:1068538, feature54:426009, tr_z_c2:386287, plat_u6p3_bu6_bp3:266796, tr_z_c3:178553, feature419:153855, feature515:104604, feature513:93700, feature493:86754, tr_c450_c2:76342, dot_u6p3:73098, tr_c600_c2:68362, feature418:64702, tr_c900_c2:63238, tr_zbest_u4p6:61808, wc_n900_zc_c2:60671, feature53:58911, wa_zc_c2_lat_sum:51914, wa_zc_c2_lat_max:51030, feature514:50837, tr_c1200_c2:49736, fh600_feature247:46829, cos_u6p3:43856, feature352:41837, feature358:31936
+[14:33:19 + 2272s] [pf_wfut_lr030_s91] DONE {"tag": "pf_wfut_lr030_s91", "auc": {}, "n_train": 2745259, "rounds": 2298, "train_time": 2189.5, "time": 2271.7}
+[14:33:25 +  2286s] wrote submission_C_wfut_lr030 1037090 mean 0.04860 models 1 min pairwise corr 1.00000
+[14:33:25 +  2286s] ALL DONE

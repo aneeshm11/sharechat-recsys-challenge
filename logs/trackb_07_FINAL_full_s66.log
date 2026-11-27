@@ -1,0 +1,24 @@
+[14:17:00 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  651M   19G   4% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31           9           0           2          24          21
+
+[14:17:05 +     5s] MODE B SMOKE 0 STAGES ['go2'] GPU True 2
+[14:17:05 +     5s] features: row 751 trace+future 325 W 156 V 191
+[14:17:05 +     5s] base features present: tr
+[14:17:05 +     5s] base features present: te
+[14:17:07 +     8s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[14:17:07 +     8s] copy 0 keeps 873950 train rows (0.568)
+[14:17:08 +     8s] copy 1 keeps 913999 train rows (0.594)
+[14:17:08 +     8s] copy 2 keeps 957310 train rows (0.623)
+[14:17:08 +     8s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[14:17:11 +    11s] final rounds 2298
+[14:17:11 +    11s] started pf_wfud_lr030_s66 on gpu 1
+[14:19:34 +  141s] [pf_wfud_lr030_s66] train matrix 1537638 x 1697
+[14:33:29 +  976s] [pf_wfud_lr030_s66] rounds 2298 AUC {}
+[14:33:54 + 1001s] [pf_wfud_lr030_s66] predicted test 1037090 mean 0.04833
+[14:33:54 + 1001s] [pf_wfud_lr030_s66] top gain: plat_u4p6_bu4_bp6:532564, feature54:297561, plat_u6p3_bu6_bp3:251642, tr_z_c2:233083, tr_z_c3:158420, tr_c900_c2:119068, feature515:75244, feature514:58196, tr_zbest_u4p6:57490, wc_n900_zc_c2:50685, feature419:49752, tr_z_u4p6:37828, feature352:35989, feature418:32448, feature493:31080, fh600_feature247:27522, tr_zbest_u6p3:26716, wa_zc_c2_lat_max:26282, tr_amp_u4p6:25240, cos_u6p3:24681, wa_zc_u4p6_lat2_max:22702, wa_zc_c2_lat2_max:21354, wc_n1200_zc_c2:19571, tr_c1200_c2:18339, feature346:17306
+[14:33:54 + 1001s] [pf_wfud_lr030_s66] DONE {"tag": "pf_wfud_lr030_s66", "auc": {}, "n_train": 1537638, "rounds": 2298, "train_time": 976.0, "time": 1001.0}
+[14:33:58 +  1018s] wrote submission_C_wfud_lr030 1037090 mean 0.04833 models 1 min pairwise corr 1.00000
+[14:33:58 +  1018s] ALL DONE

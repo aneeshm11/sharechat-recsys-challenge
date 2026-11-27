@@ -1,0 +1,26 @@
+[11:35:46 +     0s] Filesystem      Size  Used Avail Use% Mounted on
+overlay         8.0T  5.6T  2.5T  70% /
+/dev/loop2       20G  263M   20G   2% /kaggle/working
+               total        used        free      shared  buff/cache   available
+Mem:              31          12           1           3          20          18
+
+[11:35:57 +    11s] MODE B SMOKE 0 STAGES ['xc'] GPU True 2
+[11:35:57 +    11s] features: row 751 trace+future 325 W 156 V 191
+[11:35:57 +    11s] base features present: tr
+[11:35:57 +    11s] base features present: te
+[11:35:59 +    13s] rows train 1537638 test 1037090 posts 93035 train span h 72.00 test span h 72.00..150.00 rate 0.04979
+[11:35:59 +    13s] copy 0 keeps 873950 train rows (0.568)
+[11:35:59 +    13s] copy 1 keeps 913999 train rows (0.594)
+[11:35:59 +    14s] copy 2 keeps 957310 train rows (0.623)
+[11:35:59 +    14s] train rows by number of copies containing them: [0, 414221, 1039213, 84204]
+[11:40:45 +   299s] extra block um um_full.npy done; rows with a later session of the same user: 0.0639
+[11:41:25 +   340s] extra block um um_cb0.npy done; rows with a later session of the same user: 0.0800
+[11:41:58 +   372s] extra block um um_cb1.npy done; rows with a later session of the same user: 0.0801
+[11:42:25 +   399s] extra block um um_cb2.npy done; rows with a later session of the same user: 0.0818
+[11:42:37 +   411s] um coverage (later session exists): fit 0.0987 | val 0.0665 | test 0.0285
+[11:42:37 +   411s] started xc_wfu_s1 on gpu 1
+[11:50:03 +  442s] [xc_wfu_s1] train matrix 1010303 x 1697
+[12:04:14 + 1293s] [xc_wfu_s1] rounds 355 AUC {'valfull': 0.90566, 'valthin': 0.8982}
+[12:04:14 + 1293s] [xc_wfu_s1] top gain: tr_z_c2:90673, feature54:80767, plat_u6p3_bu6_bp3:52270, feature493:44773, plat_u4p6_bu4_bp6:43547, tr_z_c3:25471, feature419:15461, feature515:13513, dot_u4p6:13225, tr_zbest_u4p6:13029, tr_c600_c2:12521, feature418:11224, wa_zc_u4p6_lat2_max:7189, wa_zc_c2_lat_max:7037, wa_zc_c2_lat2_max:6434, fh600_feature247:6133, feature417:4574, feature431:4049, wa_mf_u4p6_lat_rss:3875, cos_u4p6:3639, feature53:3376, fh1200_feature247:3350, feature150:3304, fh300_feature247:3091, tr_zbest_u6p3:3088
+[12:04:14 + 1293s] [xc_wfu_s1] DONE {"tag": "xc_wfu_s1", "auc": {"valfull": 0.9056627414934453, "valthin": 0.8981971748998347}, "n_train": 1010303, "rounds": 355, "train_time": 1288.8, "time": 1292.7}
+[12:04:19 +  1714s] started xc_wfu_s2 on gpu 1
