@@ -22,8 +22,26 @@ files*: later and earlier rows of the same post, and rows of the same user at a 
 "only the features in that row"; your eligibility email asks whether request-ID-based features were used. track_b satisfies the second and not the
 first. track_a satisfies both. We submit both so that you can rule; the notebooks carry the same disclosure in their first lines.
 
-Our team's *highest* public scores (0.91408, 0.92029, 0.92316) came from earlier files that use request size. We disclosed them in every notebook
-and did not select them.
+### Every submission we made (public scores)
+
+**With `request_id`** means the file uses `request_id` or a feature derived from request grouping (request size, within-request statistics).
+**Without `request_id`** means it uses neither.
+
+| Date (UTC) | Submission | Public score | `request_id` | Selected |
+|---|---|---|---|---|
+| 24 Nov 09:27 | `sub1_xgb_cfg0.csv` | 0.88677 | with | no |
+| 24 Nov 11:13 | `sub2_blend.csv` | 0.88915 | with | no |
+| 24 Nov 14:47 | `sub4_r2_trace_x12_s101.csv` | 0.91408 | with | no |
+| 24 Nov 15:37 | `sub5_r2_trace_T16_d6x3.csv` | 0.92316 | with | no |
+| 24 Nov 19:55 | notebook `sharechat-nb-requestsize-trace`, version 2 | 0.92029 | with | no |
+| 25 Nov 05:38 | notebook `sharechat-nb-darkgray-trace`, version 3 | 0.88967 | without | no |
+| 25 Nov 11:35 | `track_b_test1_2models.csv` | 0.89178 | without | no |
+| 25 Nov 14:37 | `track_b_final.csv` (the track_b model, uploaded as a file) | 0.89382 | without | no |
+| 25 Nov 16:29 | notebook `sharechat-track-a`, version 3 | 0.83441 | without | **yes** |
+| 25 Nov 16:57 | notebook `sharechat-track-b`, version 3 | 0.89382 | without | **yes** |
+
+All five submissions with `request_id`, including our three highest public scores (0.92316, 0.92029, 0.91408), were not selected. We disclosed
+them in every notebook. Our final entry is the last two rows: 0.89382 and 0.83441, both without `request_id`.
 
 Private scores were not visible to us when this was written.
 

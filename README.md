@@ -50,5 +50,6 @@ training script of the track_a boosters was not kept, and what we provide in its
 ## Disclosure
 
 Our team's highest public scores (0.91408, 0.92029, 0.92316) came from earlier files that use request size. They are disclosed in both
-notebooks and were not selected. The scripts in `diagnostics/` read `request_id` to measure what it is worth; nothing in `track_a/` or
+notebooks and were not selected. Section 1 of the write-up lists every submission we made with its public score, marked with or without
+`request_id`, and the two we selected. The scripts in `diagnostics/` read `request_id` to measure what it is worth; nothing in `track_a/` or
 `track_b/` does.
