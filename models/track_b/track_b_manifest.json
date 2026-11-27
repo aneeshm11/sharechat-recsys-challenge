@@ -1,0 +1,60 @@
+{
+ "summary": "**Ensemble in this notebook:** 11 XGBoost boosters (depth 6, learning rate 0.03), averaged in logit space. Eight use the full feature set (row + trace + W + FH + UM): six dense-trained seeds, one trained on dense + test-like-density copies of the timeline and one on the test-like copies only (weight 3 each). Three use row + trace + W + FH (weight 1.5 each). Test-like hold-out of the blend (one hold-out model per configuration): **0.9001** (0.9077 at training density). Public leaderboard: see the results table below.",
+ "models": [
+  {
+   "file": "pf_wfud_lr030_s61.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfud_lr030_s62.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfud_lr030_s63.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfud_lr030_s64.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfud_lr030_s65.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfud_lr030_s66.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfum_lr030_s81.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfut_lr030_s91.ubj",
+   "cfg": "wfu",
+   "weight": 3.0
+  },
+  {
+   "file": "pf_wfd_lr030_s51.ubj",
+   "cfg": "wf",
+   "weight": 1.5
+  },
+  {
+   "file": "pf_wfd_lr030_s52.ubj",
+   "cfg": "wf",
+   "weight": 1.5
+  },
+  {
+   "file": "pf_wfd_lr030_s53.ubj",
+   "cfg": "wf",
+   "weight": 1.5
+  }
+ ]
+}
